@@ -1,0 +1,129 @@
+        * {
+            margin: 100;
+            padding: 100;
+            box-sizing: border-box;
+        }
+
+        body {
+            
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient(135deg, rgb(234, 55, 85), pink);
+            padding: 20px;
+        }
+        #history div {
+            background: rgb(219, 255, 178);
+            padding: 5px 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #history {
+            display: flex;
+            background-color: orange;
+            flex-direction: row;   /* horizontal */
+            gap: 10px;             /* space between items */
+            flex-wrap: wrap;       /* next line me shift ho sake */
+            margin-top: 10px;
+        }      
+
+
+        #history div:hover {
+            background: #ccc;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .parent-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            
+        }
+
+        h1 {
+            text-align: center;
+            color: #07090a;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 6px;
+            border: 2px solid #080909;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #F16D34;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .weather-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            border-left: 4px solid #F16D34;
+            margin-bottom: 6px;
+            background: #f9f9f9;
+        }
+
+        .console {
+            background: #161E54;
+            color: #BBE0EF;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+
+        .log.async {
+            border-left: 3px solid #F16D34;
+            padding-left: 6px;
+        }
+
+        .log.promise {
+            border-left: 3px solid #FF986A;
+            padding-left: 6px;
+        }
+
+        .log.callback {
+            border-left: 3px solid #BBE0EF;
+            padding-left: 6px;
+        }
+
+        .history button {
+            color: #e15f99;
+            margin: 5px;
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+
+        @media (max-width:700px) {
+            .parent-card {
+                flex-direction: column;
+            }
+        }
